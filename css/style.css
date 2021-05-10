@@ -1,0 +1,296 @@
+body{
+    background-color: #3C3C3C;
+    color: #fff;
+}
+
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.mw700{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+header h1 a img{
+    margin-top: 5px;
+    width: 50px;
+}
+
+h3{
+    font-size: 45px;
+    text-align: center;
+    margin: 30px 0;
+}
+h3 span{
+    font-size: 18px;
+    display: block;
+
+}
+
+.p-entry{
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #B4282F;
+    padding: 20px 40px;
+    width: 280px;
+}
+
+
+.p-mainview{
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/view.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.p-catchPhrase{
+    padding-top: 50px;
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+
+
+
+
+.p-feature li{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    letter-spacing: 0.15rem;
+    line-height: 1.5rem;
+}
+
+.p-feature li h4{
+    font-size: 21px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    background-color: #B4282F;
+    display: inline-block;
+    line-height: 1.1;
+    padding-left: 9px;
+}
+
+.p-feature li p span{
+    border-bottom: 3px solid #B4282F;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.p-lesson{
+    margin: 50px auto;
+}
+
+.p-lessonGroup{
+    display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.p-lesson .p-lessonBox{
+    border: #fff 1px solid;
+    padding: 20px;
+}
+
+.p-lessonBox img{
+    max-width: 280px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #fff;
+    margin: 5px auto 20px;
+    display: block;
+}
+
+.p-lessonBox__txt__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.p-lessonBox__txt__contents{
+    line-height: 2rem;
+}
+
+.p-lessonBox__txt__contents::before{
+    content: "・";
+    width: 10px;
+    height: 10px;
+}
+
+
+
+.p-howtoBox{
+    margin: 0 auto 50px;
+    letter-spacing: 0.15rem;
+    line-height: 1.5rem;
+}
+
+.p-howtoBox--number01::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(../images/number01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.p-howtoBox--number02::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(../images/number02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.p-howtoBox--number03::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(../images/number03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.p-howtoBox--white::after{
+    background-color: #fff;
+}
+
+.p-howtoBox--black{
+    background-color: #000;
+}
+
+.p-howtoBox__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.p-howtoBox__list{
+    margin-top: 20px;
+}
+
+.p-howtoBox__list li{
+    background-color: #ccc;
+    padding: 14px;
+    margin-bottom: 30px;
+}
+
+
+
+.p-campaign{
+    margin: 0  auto;
+    text-align: center;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/campaign01_1.jpg);
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+.p-campaign--2{
+    background-image: url(../images/campaign02_2.jpg);
+}
+
+.p-campaign__catch{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p-campaign__price--discount{
+    opacity: 0.8;
+    text-decoration: line-through;
+    font-size: 21px;
+}
+
+.p-campaign__price--discount::after{
+    content: "";
+    display: block;
+    margin: 15px auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 10.5px 0 10.5px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.p-campaign__price--limit{
+    margin-bottom: 10px;
+}
+
+.p-campaign__price--strong{
+    font-weight: bold;
+    font-size: 72px;
+    margin-bottom: 42px;
+}
+
+.p-campaign__price--strong span{
+    font-size: 42px;
+}
+
+
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+    background-color: #111111;
+}
+
+
+@media screen and (max-width: 780px){
+
+    .mw700{
+        padding: 0 15px;
+    }
+
+    .p-lessonBox{
+        margin-bottom: 50px;
+    }
+
+    .p-lessonBox:nth-last-child(){
+        margin-bottom: 0;
+    }
+
+    .p-lessonBox img{
+        max-width: 100%;
+    }
+
+    
+    .p-lessonGroup{
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+}
