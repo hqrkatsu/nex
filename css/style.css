@@ -45,6 +45,18 @@ h3 span{
     width: 280px;
 }
 
+ /*下から上にフェードイン*/
+  .top-to-down {
+	opacity: 0.1;
+	transform: translateY(20px);
+	transition: all 1s;
+  }
+  .top-to-down.scrollin {
+	opacity: 1;
+	transform: translateY(0);
+  }
+
+
 
 .p-mainview{
     height: 500px;
@@ -60,6 +72,8 @@ h3 span{
     color: #fff;
     font-weight: bold;
     letter-spacing: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -74,7 +88,7 @@ h3 span{
 }
 
 .p-feature li h4{
-    font-size: 21px;
+    font-size: 24px;
     margin-bottom: 14px;
     font-weight: bold;
     background-color: #B4282F;
@@ -200,11 +214,27 @@ h3 span{
 }
 
 .p-howtoBox__list li{
-    background-color: #ccc;
+    background-color: rgba(20, 20, 20, 0.8);
     padding: 14px;
     margin-bottom: 30px;
+    position: relative;
 }
-
+.p-howtoBox__list li::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: rgba(20, 20, 20, 0.8) transparent transparent transparent;
+    border-width: 15px 15px 0 15px;
+}
+.p-howtoBox__list li:last-child:after{
+    border-width: 0;
+}
 
 
 .p-campaign{
@@ -269,9 +299,18 @@ footer{
 
 
 @media screen and (max-width: 780px){
-
+    header h1{
+        text-align: center;
+    }
     .mw700{
         padding: 0 15px;
+    }
+
+    .p-catchPhrase{
+        font-size: 30px;
+        padding-top: 300px;
+        letter-spacing: 0.2rem;
+        padding-left: 15px;
     }
 
     .p-lessonBox{
